@@ -29,7 +29,8 @@ windElement.innerHTML = Math.round(response.data.wind.speed);
 dateElement.innerHTML = formatDate(response.data.dt * 1000);
 }
 
-let apiKey= "9e30b534bf5fe13f955b2b8fa22fe5a6";
-let apiUrl= `https://api.openweathermap.org/data/2.5/weather?q=New York&appid=${apiKey}&units=metric`;
+let apiKey = "9e30b534bf5fe13f955b2b8fa22fe5a6";
+let city = "Berlin";
+let apiUrl= `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
 
 axios.get(apiUrl).then(displayTemperature);

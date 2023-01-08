@@ -32,7 +32,7 @@ li {
 }
 
 li:first-letter {
-      text-transform: capitalize;
+    text-transform: capitalize;
 }
 
 .weather-app-wrapper {
